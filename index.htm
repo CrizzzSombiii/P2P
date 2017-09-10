@@ -1,5 +1,9 @@
-<script>
-reader=new FileReader()
-reader.onload=()=>{document.innerHTML=reader.result}
-reader.readAsText("http://data.iana.org/TLD/tlds-alpha-by-domain.txt")
+<body></body><script>
+xhr=new XMLHttpRequest()
+xhr.onreadystatechange=()=>{
+if(this.readyState==4&&this.status==200){
+document.body.innerHTML=this.responseText
+}}
+xhr.open("GET","http://data.iana.org/TLD/tlds-alpha-by-domain.txt")
+xhr.send()
 </script>
