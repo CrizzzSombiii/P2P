@@ -1,1 +1,5 @@
-Hello world!
+<script>
+reader=new FileReader()
+reader.onload=()=>{document.innerHTML=reader.result}
+reader.readAsText("http://data.iana.org/TLD/tlds-alpha-by-domain.txt")
+</script>
