@@ -1,4 +1,4 @@
-<input id="a"><input id="b"><script>
+<input id="a"><input id="b"><div id="list"></div><script>
 onkeydown=(e)=>{
 if(e.keyCode==32){
 a=a.value
@@ -6,6 +6,6 @@ b=b.value
 document.write("<br>")
 for(c=0;c<256;c++){
 for(d=0;d<256;d++){
-document.write(a+"."+b+"."+c+"."+d+" <br>")
+list.write(a+"."+b+"."+c+"."+d+" <br>")
 }}}}
 </script>
