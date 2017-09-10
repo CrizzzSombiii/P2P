@@ -1,2 +1,1 @@
-# P2P
-p2p heroku app
+# https://crizzzsombiii.github.io/P2P/
