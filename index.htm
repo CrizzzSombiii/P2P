@@ -1,9 +1,7 @@
 <body></body><script>
-xhr=new XMLHttpRequest()
-xhr.onreadystatechange=()=>{
-if(this.readyState==4&&this.status==200){
-document.body.innerHTML=this.responseText
-}}
-xhr.open("GET","https://www.google.com/")
-xhr.send()
+x=document.createElement("IFRAME")
+x.setAttribute("src","https://www.w3schools.com")
+x.setAttribute("width",innerWidth-32)
+x.setAttribute("height",innerHeight-32)
+document.body.appendChild(x)
 </script>
