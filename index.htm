@@ -9,7 +9,7 @@ if(e.keyCode==49){
 if(100001<satoshi){
 hashpower+=1}}
 if(e.keyCode==50){
-satoshi+=Math.floor(Math.random()*128)}}
+satoshi+=Math.floor(Math.random()*1024)}}
 setInterval(()=>{
 document.body.innerHTML=eval(Math.floor(satoshi)*0.00000001)+" BTC <br>"+
 hashpower+" GH/s . Press 1 to increase for 0.001 BTC.<br>"+
