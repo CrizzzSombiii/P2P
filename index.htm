@@ -1,10 +1,15 @@
 <script>
 setTimeout(()=>{
 satoshi=0
+hashpower=10
 document.body.style.backgroundColor="black"
 document.body.style.color="rgb(0,255,0)"
+document.onkeydown=(e)=>{
+if(e.keyCode==49){
+if(100001<satoshi){
+hashpower+=5}}}
 setInterval(()=>{
-for(i=0;i<100;i++){if(Math.random()<0.001){satoshi+=1}}
-document.body.innerHTML=eval(satoshi*0.00000001)+" BTC"
+for(i=0;i<hashpower;i++){if(Math.random()<0.0001){satoshi+=1}}
+document.body.innerHTML=eval(satoshi*0.00000001)+" BTC <br>"+hashpower+" GH/s . Press 1 to increase for 100000 satoshi."
 },1)},1)
 </script>
