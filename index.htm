@@ -7,7 +7,8 @@ document.body.style.color="rgb(0,255,0)"
 document.onkeydown=(e)=>{
 if(e.keyCode==49){
 if(100001<satoshi){
-hashpower+=1}}
+hashpower+=1
+satoshi-=100000}}
 if(e.keyCode==50){
 satoshi+=Math.floor(Math.random()*1024)}}
 setInterval(()=>{
