@@ -7,7 +7,7 @@ document.body.style.color="rgb(0,255,0)"
 document.onkeydown=(e)=>{
 if(e.keyCode==49){
 if(100001<satoshi){
-hashpower+=5}}}
+hashpower+=1}}}
 setInterval(()=>{
 document.body.innerHTML=eval(Math.floor(satoshi)*0.00000001)+" BTC <br>"+
 hashpower+" GH/s . Press 1 to increase for 100000 satoshi."},100)
