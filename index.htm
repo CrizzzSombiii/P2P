@@ -1,10 +1,10 @@
 <script>
 setTimeout(()=>{
-btc=0
+satoshi=0
 document.body.style.backgroundColor="black"
-document.body.style.color="green"
+document.body.style.color="rgb(0,255,0)"
 setInterval(()=>{
-if(Math.random()<0.1){btc+=0.00000001}
-document.body.innerHTML=btc+" BTC"
+for(i=0;i<10;i++){if(Math.random()<0.00001){sat+=1}}
+document.body.innerHTML=eval(satoshi*0.00000001)+" BTC"
 },1)},1)
 </script>
