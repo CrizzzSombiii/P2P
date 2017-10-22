@@ -7,10 +7,13 @@ document.body.style.color="rgb(0,255,0)"
 document.onkeydown=(e)=>{
 if(e.keyCode==49){
 if(100001<satoshi){
-hashpower+=1}}}
+hashpower+=1}}
+if(e.keyCode==50){
+satoshi+=Math.floor(Math.random()*25)}}
 setInterval(()=>{
 document.body.innerHTML=eval(Math.floor(satoshi)*0.00000001)+" BTC <br>"+
-hashpower+" GH/s . Press 1 to increase for 0.001 BTC."},100)
+hashpower+" GH/s . Press 1 to increase for 0.001 BTC.<br>"+
+"Press 2 to complete an offer."},100)
 },100)
 setInterval(()=>{
 for(i=0;i<hashpower;i++){if(Math.random()<0.0001){satoshi+=1}}
