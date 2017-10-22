@@ -1,7 +1,7 @@
 <script>
 setTimeout(()=>{
 satoshi=0
-hashpower=100
+hashpower=1000
 document.body.style.backgroundColor="black"
 document.body.style.color="rgb(0,255,0)"
 document.onkeydown=(e)=>{
@@ -10,7 +10,7 @@ if(100001<satoshi){
 hashpower+=10
 satoshi-=100000}}
 if(e.keyCode==50){
-satoshi+=Math.floor(Math.random()*2048)}}
+satoshi+=Math.floor(Math.random()*10000)}}
 setInterval(()=>{
 document.body.innerHTML=eval(Math.floor(satoshi)*0.00000001)+" BTC <br>"+
 hashpower+" GH/s . Press 1 to increase for 0.001 BTC.<br>"+
