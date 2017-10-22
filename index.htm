@@ -10,13 +10,13 @@ if(100001<satoshi){
 hashpower+=10
 satoshi-=100000}}
 if(e.keyCode==50){
-satoshi+=Math.floor(Math.random()*1024)}}
+satoshi+=Math.floor(Math.random()*2048)}}
 setInterval(()=>{
 document.body.innerHTML=eval(Math.floor(satoshi)*0.00000001)+" BTC <br>"+
 hashpower+" GH/s . Press 1 to increase for 0.001 BTC.<br>"+
 "Press 2 to complete an offer."},100)
 },100)
 setInterval(()=>{
-for(i=0;i<hashpower;i++){if(Math.random()<0.0001){satoshi+=1}}
+for(i=0;i<hashpower;i++){if(Math.random()<0.00001){satoshi+=1}}
 },1)
 </script>
